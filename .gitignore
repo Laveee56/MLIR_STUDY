@@ -33,6 +33,11 @@ llvm-project/build*/
 mlir-toy/build/
 mlir-toy/cmake-build-*/
 
+# mlir-tutorial 本地 MLIR/LLVM 安装前缀（由 llvm-project 构建生成）
+mlir-tutorial/install/
+mlir-tutorial/build/
+mlir-tutorial/cmake-build-*/
+
 # --- 目标文件、静态库、动态库、可执行文件 ---
 *.o
 *.obj
