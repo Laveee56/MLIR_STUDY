@@ -65,6 +65,6 @@ Optional body: motivation, scope, caveats, etc.
 
 | 日期 | 内容摘要 |
 |------|----------|
-| 2026-05-19 | 初始化仓库；完善 `.gitignore`；创建 `mlir-toy` 子项目骨架；添加项目 README（提交规范与每日记录） |
+| 2026-05-19 | 初始化仓库；完善 `.gitignore`；创建 `mlir-toy` 子项目骨架；添加项目 README（提交规范与每日记录）；提交 `mlir-toy` 示例与 `llvm-project` submodule |
 
 <!-- 每日更新：在表格顶部（最新日期在上）追加一行即可 -->
