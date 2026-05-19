@@ -1,6 +1,12 @@
 # MLIR 学习项目
 
-个人 MLIR（Multi-Level Intermediate Representation）学习与实践仓库。通过阅读官方文档、跟随教程、动手编写 Pass 与小工具，逐步理解 MLIR 的核心概念与工程实践。
+个人 MLIR（Multi-Level Intermediate Representation）学习与实践仓库。主要跟随 [KEKE046/mlir-tutorial](https://github.com/KEKE046/mlir-tutorial) 动手练习，并结合官方文档编写 Pass 与小工具，逐步理解 MLIR 的核心概念与工程实践。
+
+## 学习资料
+
+| 资源 | 说明 |
+|------|------|
+| [KEKE046/mlir-tutorial](https://github.com/KEKE046/mlir-tutorial) | 本仓库主要跟学的 MLIR 实战教程（Hands-On Practical MLIR Tutorial） |
 
 ## 项目结构
 
@@ -8,7 +14,7 @@
 |------|------|
 | `llvm-project/` | LLVM / MLIR 上游源码（本地参考与编译） |
 | `mlir-toy/` | 基于 MLIR Toy 教程的动手练习 |
-| `mlir-tutorial/` | 教程笔记与示例 |
+| `mlir-tutorial/` | 跟随 [mlir-tutorial](https://github.com/KEKE046/mlir-tutorial) 的本地练习与笔记（`install/` 为本地构建产物，不纳入版本库） |
 
 ## Git 提交信息规范
 
