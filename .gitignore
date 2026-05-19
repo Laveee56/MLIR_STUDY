@@ -1,0 +1,33 @@
+# ==========================================
+# MLIR & 编译器相关的生成产物
+# ==========================================
+
+# 忽略所有 MLIR 文本格式的中间 Dump（如 my_pass.mlir）
+*.mlir
+*.mlirbc
+
+# 如果你想保留手写的源代码，只忽略特定目录下的 dump，可以写绝对或相对路径
+# /dump_dir/*.mlir
+
+# 忽略 LLVM/MLIR 编译生成的汇编、LLVM IR、或者是 Target 代码
+*.ll
+*.bc
+*.s
+*.o
+
+# 忽略常用的 C++ 编译构建目录（如 CMake 生成的 build 夹）
+/build/
+/cmake-build-debug/
+/cmake-build-release/
+
+# 忽略二进制可执行文件
+*.out
+*.exe
+
+# ==========================================
+# 工具链与日志
+# ==========================================
+*.log
+.ninja_deps
+.ninja_log
+compile_commands.json
