@@ -10,11 +10,35 @@
 
 ## 项目结构
 
-| 目录 | 说明 |
+```
+mlir/
+├── README.md                 # 项目说明、提交规范、每日记录
+├── .gitignore
+├── .gitmodules               # llvm-project submodule 配置
+├── llvm-project/             # LLVM / MLIR 上游源码（git submodule）
+├── mlir-toy/                 # 跟随教程的动手练习
+│   ├── CMakeLists.txt
+│   └── main.cpp
+└── install/                  # 本地 MLIR/LLVM 安装前缀（构建产物，不纳入版本库）
+    ├── bin/
+    ├── include/
+    ├── lib/
+    └── share/
+```
+
+| 路径 | 说明 |
 |------|------|
-| `llvm-project/` | LLVM / MLIR 上游源码（本地参考与编译） |
-| `mlir-toy/` | 基于 MLIR Toy 教程的动手练习 |
-| `mlir-tutorial/` | 跟随 [mlir-tutorial](https://github.com/KEKE046/mlir-tutorial) 的本地练习与笔记（`install/` 为本地构建产物，不纳入版本库） |
+| `llvm-project/` | LLVM / MLIR 上游源码（[git submodule](https://github.com/llvm/llvm-project)，本地参考与编译） |
+| `mlir-toy/` | 跟随 [mlir-tutorial](https://github.com/KEKE046/mlir-tutorial) 的 out-of-tree 练习（CMake + 示例程序） |
+| `install/` | 由 `llvm-project` 构建生成的本地工具链安装目录，仅供本机使用 |
+| `mlir-toy/build/` | `mlir-toy` 的本地 CMake 构建目录（不纳入版本库） |
+| `llvm-project/build/` | `llvm-project` 的本地构建目录（不纳入版本库） |
+
+克隆本仓库后，初始化 submodule：
+
+```bash
+git submodule update --init --recursive
+```
 
 ## Git 提交信息规范
 
@@ -71,6 +95,7 @@ Optional body: motivation, scope, caveats, etc.
 
 | 日期 | 内容摘要 |
 |------|----------|
+| 2026-05-20 | 更新 README 项目结构（目录树、submodule 说明、克隆指引） |
 | 2026-05-19 | 初始化仓库；完善 `.gitignore`；创建 `mlir-toy` 子项目骨架；添加项目 README（提交规范与每日记录）；提交 `mlir-toy` 示例与 `llvm-project` submodule |
 
 <!-- 每日更新：在表格顶部（最新日期在上）追加一行即可 -->
